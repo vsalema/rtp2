@@ -32,7 +32,8 @@ iframe {
   transform: translateY(-35.95%);
 }
   </style>
-<a href="https://cdn.taboola.com/libtrc/impl.20240501-14-RELEASE.js">External Link</a>
+<noscript>
+  <a href="https://cdn.taboola.com/libtrc/impl.20240501-14-RELEASE.js">External Link</a>
 </noscript>
 </head>
 
@@ -42,5 +43,11 @@ iframe {
     <iframe src="https://www.elahmad.com/tv/radiant.php?id=https://streaming-live.rtp.pt/liverepeater/smil:rtp2HD.smil/playlist.m3u8" width="640" height="480" frameborder="0" title="Funny Cat Videos For Kids" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
   </div>
 </div>
+<button onclick="toggle()">Make that iframe full screen</button>
+  <script>
+  function toggle() {
+    document.querySelector('iframe').requestFullscreen();
+  }
+</script>
 </body>
 </html>
